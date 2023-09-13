@@ -30,8 +30,8 @@ plot(NPCLocation(1), NPCLocation(2),'or','markerfacecolor','r','markersize',10);
 
 tic;
 
-parfor iSample=1:NSample
-%for iSample=1:NSample
+%parfor iSample=1:NSample %using parelling the CPU have a faster speed.
+for iSample=1:NSample
     
     % intial condition
     x = [L/2,0];
